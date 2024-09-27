@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09668923-1249-4431-B744-B552D7BF22F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QlyDVCuoi</RootNamespace>
+    <AssemblyName>QlyDVCuoi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.18, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="Guna.UI" />
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SQLConnection, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SqlConnection.1.0.4\lib\netstandard2.0\SQLConnection.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.6, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.6\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CSDL.cs" />
+    <Compile Include="FormDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangKy.Designer.cs">
+      <DependentUpon>FormDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangNhap.Designer.cs">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDoiMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoiMK.Designer.cs">
+      <DependentUpon>FormDoiMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formm\FormBaoCaoNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formm\FormBaoCaoNgay.Designer.cs">
+      <DependentUpon>FormBaoCaoNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formm\FormChoThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formm\FormChoThue.Designer.cs">
+      <DependentUpon>FormChoThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formm\FormKiemTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formm\FormKiemTra.Designer.cs">
+      <DependentUpon>FormKiemTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formm\FormNhanDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formm\FormNhanDo.Designer.cs">
+      <DependentUpon>FormNhanDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formm\FormThanhLyHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formm\FormThanhLyHD.Designer.cs">
+      <DependentUpon>FormThanhLyHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formm\FormThayDoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formm\FormThayDoi.Designer.cs">
+      <DependentUpon>FormThayDoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formm\FormThemCTHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formm\FormThemCTHD.Designer.cs">
+      <DependentUpon>FormThemCTHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formm\FormThemHDcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formm\FormThemHDcs.Designer.cs">
+      <DependentUpon>FormThemHDcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formm\FormThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formm\FormThongKe.Designer.cs">
+      <DependentUpon>FormThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formm\FormTimKiemDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formm\FormTimKiemDV.Designer.cs">
+      <DependentUpon>FormTimKiemDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formm\FormTimkiemKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formm\FormTimkiemKH.Designer.cs">
+      <DependentUpon>FormTimkiemKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formm\FormTroGiup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formm\FormTroGiup.Designer.cs">
+      <DependentUpon>FormTroGiup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuanLy.Designer.cs">
+      <DependentUpon>FormQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="FormDangKy.resx">
+      <DependentUpon>FormDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDangNhap.resx">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoiMK.resx">
+      <DependentUpon>FormDoiMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formm\FormBaoCaoNgay.resx">
+      <DependentUpon>FormBaoCaoNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formm\FormChoThue.resx">
+      <DependentUpon>FormChoThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formm\FormKiemTra.resx">
+      <DependentUpon>FormKiemTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formm\FormNhanDo.resx">
+      <DependentUpon>FormNhanDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formm\FormThanhLyHD.resx">
+      <DependentUpon>FormThanhLyHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formm\FormThayDoi.resx">
+      <DependentUpon>FormThayDoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formm\FormThemCTHD.resx">
+      <DependentUpon>FormThemCTHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formm\FormThemHDcs.resx">
+      <DependentUpon>FormThemHDcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formm\FormThongKe.resx">
+      <DependentUpon>FormThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formm\FormTimKiemDV.resx">
+      <DependentUpon>FormTimKiemDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formm\FormTimkiemKH.resx">
+      <DependentUpon>FormTimkiemKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formm\FormTroGiup.resx">
+      <DependentUpon>FormTroGiup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuanLy.resx">
+      <DependentUpon>FormQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

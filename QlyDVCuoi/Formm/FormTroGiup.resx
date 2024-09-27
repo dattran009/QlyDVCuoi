@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        Fv4HDKhXJzR9Y80AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>    Quản lý lịch trình: Ứng dụng có thể giúp lập lịch trình cho ngày cưới bằng cách ghi chú các sự kiện quan trọng
+
+như buổi lễ, tiệc, chụp ảnh, v.v. Nó cũng có thể gửi nhắc nhở và thông báo cho cặp đôi về các sự kiện sắp tới.
+
+    Quản lý ngân sách: Ứng dụng có thể giúp theo dõi ngân sách cưới bằng cách ghi lại các khoản chi tiêu dự kiến
+
+và thực tế, cũng như cung cấp khuyến nghị về cách phân bổ ngân sách hiệu quả.
+
+    Tạo và quản lý danh sách nhiệm vụ: Ứng dụng có thể cung cấp danh sách công việc cần làm và lịch trình cho mỗi
+
+công việc, giúp cặp đôi theo dõi tiến độ và đảm bảo không bỏ sót bất kỳ chi tiết nào.
+
+    Tìm kiếm và đặt dịch vụ: Ứng dụng có thể cung cấp công cụ tìm kiếm và đặt dịch vụ cho các yếu tố quan trọng 
+
+như địa điểm tổ chức, nhà hàng, đội ngũ chụp ảnh, v.v.</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>    Ứng dụng quản lý dịch vụ cưới có thể có nhiều chức năng khác nhau để 
+
+giúp các cặp đôi tổ chức và quản lý các chi tiết của ngày cưới của họ một 
+
+cách thuận tiện. Dưới đây là một số chức năng phổ biến mà ứng dụng này
+
+có thể cung cấp:
+</value>
+  </data>
+</root>
